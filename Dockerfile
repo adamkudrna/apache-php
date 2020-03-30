@@ -19,7 +19,7 @@ RUN         apt-get update \
                 libpcre3-dev \
                 libpng-dev \
                 libzip-dev \
-                mysql-client \
+                default-mysql-client \
                 postgresql-9.5 \
                 postgresql-server-dev-all \
                 unzip \
