@@ -13,3 +13,10 @@ usermod -s /bin/bash www-data
 # Make home and www dirs of www-data writable for www-data user for usage by development tool caches etc.
 chown -R www-data: /var/www
 chown -R www-data: /www
+
+# Create ci-user to be accessed via a known UID
+useradd --create-home --shell /bin/bash --uid 1000 ci-user
+
+# Make www dirs of ci-user writable for ci-user user for usage by development tool caches etc.
+chown -R ci-user: /var/www
+chown -R ci-user: /www
